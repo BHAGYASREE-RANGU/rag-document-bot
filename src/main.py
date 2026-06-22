@@ -8,6 +8,9 @@ and grounded strictly in the content of those documents.
 Usage:
     python main.py
 """
+import streamlit as st
+
+st.title("RAG Document Q&A Bot")
 
 from rag import answer_question
 
