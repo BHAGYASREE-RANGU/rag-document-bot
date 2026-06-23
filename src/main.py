@@ -9,7 +9,7 @@ import streamlit as st
 import tempfile
 import os
 
-from src.rag import answer_question
+from rag import answer_question
 
 # ── Assume this backend function exists (from rag.py) ─────────────────────────
 # from rag import answer_question
