@@ -9,18 +9,18 @@ import streamlit as st
 import tempfile
 import os
 
-# ── Assume this backend function exists (from rag.py) ─────────────────────────
-# from rag import answer_question
+# ── Assume this backend function exists (from src.rag.py) ─────────────────────────
+# from src.rag import answer_question
 #
 # For development/demo without the backend, a mock is included below.
 # Remove the mock and uncomment the import above when connecting the real backend.
 
 def answer_question(file_path: str, question: str) -> dict:
-    """Mock backend — replace with: from rag import answer_question"""
+    """Mock backend — replace with: from src.rag import answer_question"""
     return {
         "answer": (
             "This is a placeholder answer. Connect your real `answer_question()` "
-            "function from rag.py to see grounded responses from your documents."
+            "function from src.rag.py to see grounded responses from your documents."
         ),
         "sources": [
             {"source": "example.pdf", "page": 4},
