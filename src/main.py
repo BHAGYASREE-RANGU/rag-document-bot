@@ -310,7 +310,7 @@ with col_main:
 
             try:
                 with st.spinner("Searching your document and generating an answer …"):
-                    result = answer_question(file_path=tmp_path, question=question)
+                    result = answer_question(question)
 
                 answer_text = result.get("answer", "No answer returned.")
                 sources      = result.get("sources", [])
